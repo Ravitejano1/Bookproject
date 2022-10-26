@@ -16,7 +16,7 @@
 
   <name>Bookproject</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://localhost:8085/manager/html/list</url>
+  <url>http://maven.apache.org</url>
 
     <dependencies>
     <dependency>
