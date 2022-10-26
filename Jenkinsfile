@@ -25,7 +25,6 @@ node{
    }*/
    stage('Deploy to Tomcat'){
      bat "copy target\\Bookproject.war \"${tomcatWeb}\\Bookproject.war\""
-      deploy adapters: [tomcat9(credentialsId: '70bf7e74-4a07-4349-a42d-893a22866e00', path: '', url: 'http://localhost:8085/manager/html/list')], contextPath: 'Jenkinsfile', war: '**/*.war'
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
