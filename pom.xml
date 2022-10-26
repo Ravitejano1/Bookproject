@@ -17,6 +17,7 @@
   <!-- FIXME change it to the project's website -->
   <url>http://maven.apache.org</url>
 
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -25,6 +26,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <plugins>
+		<plugin>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>3.0.0</version>
+	<configuration>
+			<failOnMissingWebXml>false</failOnMissingWebXml>
+	</configuration>
+		</plugin>
+   </plugins>
 
   <build>
 	<finalName>Bookproject</finalName>
