@@ -25,16 +25,15 @@
 		<scope>test</scope>
     </dependency>
   </dependencies>
-    
-  <plugins>
-		<plugin>
-			<artifactId>maven-war-plugin</artifactId>
-			<version>3.0.0</version>
-			
-		</plugin>
-   </plugins>
-
+  
   <build>
+    <plugins>
+      	<plugin>
+           <artifactId>maven-war-plugin</artifactId>
+           <version>3.0.0</version>
+        </plugin>
+
+	</plugins>
 	<finalName>Bookproject</finalName>
   </build>
 </project>
